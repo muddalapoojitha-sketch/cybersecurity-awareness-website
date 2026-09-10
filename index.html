@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberSafe | Cybersecurity Awareness</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #07111f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0b1d33;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 8%;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      color: #19d3da;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #19d3da;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 8%;
+      background: linear-gradient(rgba(7, 17, 31, 0.85), rgba(7, 17, 31, 0.95)),
+        url("https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+    }
+
+
+    .hero h1 {
+      font-size: 48px;
+      color: #19d3da;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      color: #d5e5ef;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: #19d3da;
+      color: #07111f;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: white;
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #19d3da;
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #10263d;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #1f4566;
+    }
+
+    .card h3 {
+      color: #19d3da;
+      margin-bottom: 12px;
+    }
+
+    .tips {
+      background: #0b1d33;
+    }
+
+    .tips ul {
+      max-width: 800px;
+      margin: auto;
+      list-style-position: inside;
+    }
+
+    .tips li {
+      background: #10263d;
+      margin: 12px 0;
+      padding: 14px;
+      border-left: 4px solid #19d3da;
+  }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #04101d;
+      color: #a8bdcc;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+</section>
+    <div class="logo">CyberSafe</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#threats">Threats</a>
+      <a href="#tips">Safety Tips</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <h1>Stay Safe in the Digital World</h1>
+        <p>
+          Learn how to identify cyber threats, protect your personal information,
+          and develop safer online habits.
+        </p>
+        <a class="btn" href="#tips">Explore Safety Tips</a>
+      </div>
+    </section>
+
+    <section id="threats">
+      <h2 class="section-title">Common Cyber Threats</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>🎣 Phishing</h3>
+          <p>Fake emails, websites, or messages designed to steal passwords and personal information.</p>
+        </article>
+
+        <article class="card">
+          <h3>🦠 Malware</h3>
+          <p>Harmful software that can damage devices, spy on users, or steal sensitive data.</p>
+        </article>
+
+        <article class="card">
+          <h3>🔐 Weak Passwords</h3>
+          <p>Simple or reused passwords make it easier for attackers to access your accounts.</p>
+        </article>
+
+        <article class="card">
+          <h3>📶 Unsafe Wi‑Fi</h3>
+          <p>Public Wi‑Fi networks can expose your data if they are insecure or controlled by attackers.</p>
+        </article>
+      </div>
+    </section>
+    <section id="social-media">
+    <h2>📱 Social Media Safety</h2>
+    <p>Protect your personal information while using social media.</p>
+
+    <ul>
+        <li>Keep your account privacy settings secure.</li>
+        <li>Don't share personal information publicly.</li>
+        <li>Be careful when accepting unknown requests.</li>
+        <li>Report suspicious accounts or messages.</li>
+    </ul>
+</section>
+
+    <section>
+
+      <section id="email">
+    <h2>📧 Email Safety</h2>
+    <p>Stay alert when reading emails and opening attachments.</p>
+
+    <ul>
+        <li>Check the sender before replying.</li>
+        <li>Don't open unexpected attachments.</li>
+        <li>Be careful with urgent requests.</li>
+        <li>Never share passwords or OTPs through email.</li>
+    </ul>
+</section>
+
+<section id="browsing">
+    <h2>🌐 Safe Browsing</h2>
+    <p>Browse the internet carefully and protect your personal information.</p>
+
+    <ul>
+        <li>Use trusted and secure websites.</li>
+        <li>Check for HTTPS before entering sensitive information.</li>
+        <li>Avoid downloading files from unknown websites.</li>
+        <li>Don't enter personal information on suspicious pages.</li>
+    </ul>
+</section>
+
+<script>
+  function checkAnswer(answer) {
+    if (answer == "no") {
+      document.getElementById("result").innerHTML = "Correct! Avoid unknown links.";
+    } else {
+      document.getElementById("result").innerHTML = "Wrong! Unknown links may be phishing attacks.";
+    }
+  }
+</script>
+
+    <section>
+  <h2>Phishing Awareness</h2>
+  <p>Phishing is a fake email, message, or website used to steal your personal information.</p>
+  <p>Always check the sender's email address before clicking links.</p>
+  <p>Never share passwords, OTPs, or bank details through unknown messages.</p>
+</section>
+      <h2 class="section-title">Understanding Phishing</h2>
+      <p>
+        Phishing is a cyber attack that uses disguised emails or websites to trick you into providing sensitive information. 
+        Always verify the sender's email address, look for spelling errors, and avoid clicking on suspicious links.
+      </p>
+
+    <section class="tips" id="tips">
+      <h2 class="section-title">Cybersecurity Safety Tips</h2>
+
+      <ul>
+        <li>Use long, unique passwords for every account.</li>
+        <li>Enable two-factor authentication (2FA) whenever possible.</li>
+        <li>Do not click suspicious links or download unknown attachments.</li>
+        <li>Keep your phone, computer, browser, and apps updated.</li>
+        <li>Check website URLs carefully before entering personal details.</li>
+        <li>Avoid accessing sensitive accounts on public Wi‑Fi.</li>
+      </ul>
+    </section>
+    <section id="quiz">
+    <h2>🧠 Cybersecurity Quiz</h2>
+
+    <p>What should you do when you receive a suspicious link?</p>
+
+    <button onclick="checkAnswer('correct')">
+        Do not click it
+    </button>
+
+    <button onclick="checkAnswer('wrong')">
+        Click it
+    </button>
+
+    <button onclick="checkAnswer('wrong')">
+        Share it with friends
+    </button>
+
+    <p id="quiz-result"></p>
+
+    <p id="score">Score: 0</p>
+</section>
+<section id="resources">
+    <h2>📚 Cybersecurity Resources</h2>
+    <p>Learn more about staying safe online.</p>
+
+    <ul>
+        <li>Learn about common online scams.</li>
+        <li>Practice identifying suspicious messages.</li>
+        <li>Keep your devices and applications updated.</li>
+        <li>Learn how to protect your personal information.</li>
+    </ul>
+</section>
+  </main>
+
+  <footer>
+    <p>© 2024 CyberSafe. All rights reserved.</p>
+    <p>🔐 Stay Aware • Stay Smart • Stay Safe Online</p>
+  </footer>
+  <script src="script.js"></script>
+  <button id="topBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    ⬆️ Back to Top
+</button>
+</body>
+</html>
