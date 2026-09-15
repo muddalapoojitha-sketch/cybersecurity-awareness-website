@@ -113,3 +113,27 @@ footer {
         margin: 6px 0;
     }
 }
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#darkModeBtn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+}
